@@ -176,15 +176,80 @@ line-height: 70px;
     .head-image-ps{
         z-index: 10;
         opacity: 1;
-        
-        &:hover{
-            opacity: 0;
-            cursor: crosshair;
-        }
+    
 
     }
     
 }
+
+.head-image-arrow{
+    color: $main-pink;
+    font-size: 3em;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
+    opacity: 0;
+
+}
+
+
+@-webkit-keyframes bounce {
+
+    0% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+
+
+    100% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+
+}
+
+@keyframes bounce {
+
+    0% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+
+
+    100% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+
+}
+
+
+
+#arisu-photo .head-image-ps:hover{
+      opacity: 0;
+            cursor: crosshair;
+}
+
+#arisu-photo:hover .head-image-arrow{
+    opacity: 1;
+}
+ 
 
 #top-nav #menu li a:hover {
     background-color: #ff0084;
@@ -281,61 +346,7 @@ h2{
  
 }
 
-.head-image-arrow{
-    color: $main-pink;
-    font-size: 3em;
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    -webkit-animation: bounce 1s infinite;
-    animation: bounce 1s infinite;
 
-}
-
-
-@-webkit-keyframes bounce {
-
-    0% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-
-    50% {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-
-
-
-    100% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-
-
-}
-
-@keyframes bounce {
-
-    0% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-
-    50% {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-
-
-
-    100% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-
-
-}
 
 .dotted-highlight-bigger{
      margin: 0 0 20px 0;
@@ -379,20 +390,24 @@ overflow: hidden;
         transform: translateX(-50%);
         background-color: $main-pink;
         color: white;
-            height: 40px;
+            height: 50px;
         text-align: center;
-        line-height: 40px;
+        line-height: 50px;
         cursor: pointer;
+        width: 70px;
+        font-size: 1.7rem;
     }
     
     .coding-panel-plus{
-        bottom: -40px;
-        width: 60px;
+        bottom: -50px; 
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     
       .coding-panel-minus{
         bottom: 0px;
-        width: 60px;
+            border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .coding-panel-copy{
