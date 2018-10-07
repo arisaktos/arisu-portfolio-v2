@@ -1,8 +1,8 @@
 .DS_Store
 node_modules
 node_modules/*
-app/*
+dist/*
 *.log
 .vs
-dist/img/work-files/*
+app/img/work-files/*
 sh.exe.stackdump
