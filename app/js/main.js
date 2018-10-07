@@ -19,4 +19,15 @@ $('#menu li a').click(function(){
 }); 
 
 
+$('.coding-panel-plus').on( "click", function() {
+    $(this).parent().removeClass('coding-panel-up');
+  $(this).parent().addClass('coding-panel-down');
+});
+
+
+
+$('.coding-panel-minus').on( "click", function() {
+    $(this).parent().removeClass('coding-panel-down');
+  $(this).parent().addClass('coding-panel-up');
+});
 

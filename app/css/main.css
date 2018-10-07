@@ -237,17 +237,22 @@ h2 {
   height: 400px;
   position: relative;
   overflow: hidden; }
-  .codin-panel .coding-panel-plus {
+  .codin-panel .coding-panel-button {
     position: absolute;
-    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ff0084;
     color: white;
-    width: 60px;
     height: 40px;
     text-align: center;
-    line-height: 40px; }
+    line-height: 40px;
+    cursor: pointer; }
+  .codin-panel .coding-panel-plus {
+    bottom: -40px;
+    width: 60px; }
+  .codin-panel .coding-panel-minus {
+    bottom: 0px;
+    width: 60px; }
   .codin-panel .coding-panel-copy {
     position: absolute;
     top: -100%;
@@ -292,8 +297,11 @@ h2 {
     text-decoration: none;
     border: 1px dashed white; }
 
-.codin-panel:hover .coding-panel-copy {
-  top: 0; }
+.coding-panel-down {
+  top: 0 !important; }
+
+.coding-panel-up {
+  top: -100% !important; }
 
 .social-icon-big {
   padding: 0 10px;

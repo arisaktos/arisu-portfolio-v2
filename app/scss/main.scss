@@ -373,18 +373,26 @@ h2{
     position: relative;
 overflow: hidden;
     
- 
-    .coding-panel-plus{
+    .coding-panel-button{
          position: absolute;
-        bottom: -40px;
-        left: 50%; 
+           left: 50%; 
         transform: translateX(-50%);
         background-color: $main-pink;
         color: white;
-        width: 60px;
-        height: 40px;
+            height: 40px;
         text-align: center;
         line-height: 40px;
+        cursor: pointer;
+    }
+    
+    .coding-panel-plus{
+        bottom: -40px;
+        width: 60px;
+    }
+    
+      .coding-panel-minus{
+        bottom: 0px;
+        width: 60px;
     }
     
     .coding-panel-copy{
@@ -447,8 +455,13 @@ box-shadow: 3px 4px 11px 0px rgba(0,0,0,0.5);
     }
 }
 
-.codin-panel:hover .coding-panel-copy{
-   top: 0;
+.coding-panel-down{
+   top: 0!important;
+    
+}
+
+.coding-panel-up{
+   top: -100%!important;
     
 }
 
