@@ -119,7 +119,3 @@
   #sticky-top h1 {
     font-size: 1.5em;
     letter-spacing: 2px; } }
-
-@media (max-width: 415px) {
-  .coding-panel-1, .coding-panel-2, .coding-panel-3, .coding-panel-4, .coding-panel-5, .coding-panel-6, .coding-panel-7, .coding-panel-8 {
-    background-size: contain; } }
