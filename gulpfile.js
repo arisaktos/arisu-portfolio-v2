@@ -24,6 +24,12 @@ gulp.task('browserSync', function() {
   })
 });
 
+gulp.task('docs', function(){   
+    return gulp.src('app/docs/*.*')      
+        .pipe(gulp.dest('dist/docs'))
+    }); 
+
+
 gulp.task('sass', function(){   
     return gulp.src('app/scss/**/*.scss')      
     .pipe(sass())     
@@ -63,7 +69,7 @@ gulp.task('default', function(callback) {
  
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    'sass', 'useref', 'images',
+    'sass', 'useref', 'images', 'docs',
     callback
   )
 });
